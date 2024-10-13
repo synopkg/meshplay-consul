@@ -1,4 +1,4 @@
-name: Meshplay Adapter for Consul Tests
+name: Meshery Adapter for Consul Tests
 
 on:
   push:

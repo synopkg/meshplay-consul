@@ -1,6 +1,7 @@
 package consul
 
 import (
+	"errors"
 	"fmt"
 	"strings"
 	"sync"
@@ -95,7 +96,8 @@ func mergeErrors(errs []error) error {
 		errMsgs = append(errMsgs, err.Error())
 	}
 
-	return fmt.Errorf(strings.Join(errMsgs, "\n"))
+	return errors.New(strings.Join(errMsgs, "\n"))
+
 }
 
 func mergeMsgs(strs []string) string {

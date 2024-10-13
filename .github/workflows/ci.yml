@@ -1,4 +1,4 @@
-name: Meshplay Consul Code Quality
+name: Meshery Consul Code Quality
 on:
   push:
     branches: [ master ] # keep it simple and reduce the abuse of CI resources    

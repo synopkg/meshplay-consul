@@ -30,11 +30,11 @@ var (
 
 	// ErrParseOAMComponent represents the error which is
 	// generated during the OAM component parsing
-	ErrParseOAMComponent = errors.New(ErrParseOAMComponentCode, errors.Alert, []string{"error parsing the component"}, []string{"Error occurred while parsing application component in the OAM request made by Meshplay Server"}, []string{"Could not unmarshall configuration component received via ProcessOAM gRPC call into a valid Component struct"}, []string{"Check if Meshplay Server is creating valid component for ProcessOAM gRPC call. This error should never happen and can be reported as a bug in Meshplay Server. Also, check if Meshplay Server and adapters are referring to same component struct provided in MeshKit."})
+	ErrParseOAMComponent = errors.New(ErrParseOAMComponentCode, errors.Alert, []string{"error parsing the component"}, []string{"Error occurred while parsing application component in the OAM request made by Meshery Server"}, []string{"Could not unmarshall configuration component received via ProcessOAM gRPC call into a valid Component struct"}, []string{"Check if Meshery Server is creating valid component for ProcessOAM gRPC call. This error should never happen and can be reported as a bug in Meshery Server. Also, check if Meshery Server and adapters are referring to same component struct provided in MeshKit."})
 
 	// ErrParseOAMConfig represents the error which is
 	// generated during the OAM configuration parsing
-	ErrParseOAMConfig = errors.New(ErrParseOAMConfigCode, errors.Alert, []string{"error parsing the configuration"}, []string{"Error occurred while parsing configuration in the request made by Meshplay Server"}, []string{"Could not unmarshall OAM config received via ProcessOAM gRPC call into a valid Config struct"}, []string{"Check if Meshplay Server is creating valid config for ProcessOAM gRPC call. This error should never happen and can be reported as a bug in Meshplay Server. Also, confirm that Meshplay Server and Adapters are referring to same config struct provided in MeshKit"})
+	ErrParseOAMConfig = errors.New(ErrParseOAMConfigCode, errors.Alert, []string{"error parsing the configuration"}, []string{"Error occurred while parsing configuration in the request made by Meshery Server"}, []string{"Could not unmarshall OAM config received via ProcessOAM gRPC call into a valid Config struct"}, []string{"Check if Meshery Server is creating valid config for ProcessOAM gRPC call. This error should never happen and can be reported as a bug in Meshery Server. Also, confirm that Meshery Server and Adapters are referring to same config struct provided in MeshKit"})
 )
 
 func ErrApplyOperation(err error) error {
