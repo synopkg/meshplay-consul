@@ -1,4 +1,4 @@
-name: Meshery-consul Build and Releaser
+name: meshplay-consul Build and Releaser
 on:
   push:
     branches:

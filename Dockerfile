@@ -1,4 +1,4 @@
-FROM golang:1.19 as builder
+FROM golang:1.19 AS builder
 
 ARG VERSION
 ARG GIT_COMMITSHA
@@ -15,13 +15,13 @@ COPY internal/ internal/
 COPY consul/ consul/
 COPY build/ build/
 
-RUN GOPROXY=direct,https://proxy.golang.org CGO_ENABLED=0 GOOS=linux GO111MODULE=on go build -ldflags="-w -s -X main.version=$VERSION -X main.gitsha=$GIT_COMMITSHA" -a -o meshery-consul main.go
+RUN GOPROXY=direct,https://proxy.golang.org CGO_ENABLED=0 GOOS=linux GO111MODULE=on go build -ldflags="-w -s -X main.version=$VERSION -X main.gitsha=$GIT_COMMITSHA" -a -o meshplay-consul main.go
 
 FROM gcr.io/distroless/nodejs:16
 ENV DISTRO="debian"
-ENV SERVICE_ADDR="meshery-consul"
-ENV MESHERY_SERVER="http://meshery:9081"
+ENV SERVICE_ADDR="meshplay-consul"
+ENV MESHPLAY_SERVER="http://meshery:9081"
 COPY templates/ ./templates
 WORKDIR /
-COPY --from=builder /build/meshery-consul .
-ENTRYPOINT ["/meshery-consul"]
+COPY --from=builder /build/meshplay-consul .
+ENTRYPOINT ["/meshplay-consul"]

@@ -1,4 +1,4 @@
-name: Meshery Consul Pattern Components Generator
+name: Meshplay Consul Pattern Components Generator
 on:
   push:
     branches:

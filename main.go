@@ -21,12 +21,12 @@ import (
 	"time"
 
 	"github.com/layer5io/meshery-adapter-library/adapter"
-	"github.com/layer5io/meshery-consul/internal/config"
+	"github.com/synopkg/meshplay-consul/internal/config"
 	configprovider "github.com/layer5io/meshkit/config/provider"
 	"github.com/layer5io/meshkit/utils/events"
 
 	"github.com/layer5io/meshery-adapter-library/api/grpc"
-	"github.com/layer5io/meshery-consul/consul"
+	"github.com/synopkg/meshplay-consul/consul"
 	"github.com/layer5io/meshkit/logger"
 )
 

@@ -1,4 +1,4 @@
-name: Meshery Consul Code Quality
+name: Meshplay Consul Code Quality
 on:
   push:
     branches: [ master ] # keep it simple and reduce the abuse of CI resources    
@@ -39,7 +39,7 @@ jobs:
     # golandci-lint need to be run before codecov and succeed
     needs: [tidy]
     name: Code Coverage
-    if: github.repository == 'meshery/meshery-consul'
+    if: github.repository == 'meshery/meshplay-consul'
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
@@ -53,7 +53,7 @@ jobs:
       - name: Run unit tests
         run: go test --short ./... -race -coverprofile=coverage.txt -covermode=atomic
       - name: Upload coverage to Codecov
-        if: github.repository == 'meshery/meshery-consul'
+        if: github.repository == 'meshery/meshplay-consul'
         uses: codecov/codecov-action@v3
         with:
           files: ./coverage.txt

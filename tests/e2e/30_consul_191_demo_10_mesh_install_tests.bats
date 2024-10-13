@@ -17,7 +17,7 @@ setup() {
 }
 EOT
 )
-  run bash -c "echo '$INSTALL_CONSUL' | grpcurl --plaintext -d @ $MESHERY_ADAPTER_ADDR:10002 meshes.MeshService.ApplyOperation"
+  run bash -c "echo '$INSTALL_CONSUL' | grpcurl --plaintext -d @ $MESHPLAY_ADAPTER_ADDR:10002 meshes.MeshService.ApplyOperation"
   [ "$status" -eq 0 ]
   # This operation returns a JSON map if successful. An error doesn't return a JSON object, unless the implementation in
   # api/grpc/handlers.go:ApplyOperation is changed (see TODO there).

@@ -1,4 +1,4 @@
-# Copyright Meshery Authors
+# Copyright Meshplay Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -43,15 +43,15 @@ gobuild:
 
 ## Build Adapter container image with "edge-latest" tag
 docker:
-	DOCKER_BUILDKIT=1 docker build -t layer5/meshery-$(ADAPTER):$(RELEASE_CHANNEL)-latest .
+	DOCKER_BUILDKIT=1 docker build -t khulnasoft/meshplay-$(ADAPTER):$(RELEASE_CHANNEL)-latest .
 
 ## Run Adapter container with "edge-latest" tag
 docker-run:
-	(docker rm -f meshery-$(ADAPTER)) || true
+	(docker rm -f meshplay-$(ADAPTER)) || true
 	docker run --name meshery-$(ADAPTER) -d \
 	-p 10002:10002 \
 	-e DEBUG=true \
-	layer5/meshery-$(ADAPTER):$(RELEASE_CHANNEL)-latest
+	khulnasoft/meshplay-$(ADAPTER):$(RELEASE_CHANNEL)-latest
 
 ## Build and run Adapter locally
 run:

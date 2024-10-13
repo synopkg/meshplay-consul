@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/layer5io/meshery-consul/internal/config"
+	"github.com/synopkg/meshplay-consul/internal/config"
 
 	"github.com/layer5io/meshkit/utils"
 	"github.com/layer5io/meshkit/utils/kubernetes"

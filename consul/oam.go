@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/layer5io/meshery-adapter-library/meshes"
-	"github.com/layer5io/meshery-consul/internal/config"
+	"github.com/synopkg/meshplay-consul/internal/config"
 	"github.com/layer5io/meshkit/models/oam/core/v1alpha1"
 	mesherykube "github.com/layer5io/meshkit/utils/kubernetes"
 	"gopkg.in/yaml.v2"

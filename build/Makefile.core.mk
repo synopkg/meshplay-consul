@@ -1,4 +1,4 @@
-# Copyright Meshery Authors
+# Copyright Meshplay Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,14 +34,14 @@ ADAPTER_URLS := "localhost:10000 localhost:10001 localhost:10002 localhost:10004
 # Providers
 #-----------------------------------------------------------------------------
 REMOTE_PROVIDER_LOCAL="http://localhost:9876"
-MESHERY_CLOUD_DEV="http://localhost:9876"
-MESHERY_CLOUD_PROD="https://meshery.layer5.io"
-MESHERY_CLOUD_STAGING="https://staging-meshery.layer5.io"
+MESHPLAY_CLOUD_DEV="http://localhost:9876"
+MESHPLAY_CLOUD_PROD="https://meshery.layer5.io"
+MESHPLAY_CLOUD_STAGING="https://staging-meshery.layer5.io"
 
 #-----------------------------------------------------------------------------
 # Server
 #-----------------------------------------------------------------------------
-MESHERY_K8S_SKIP_COMP_GEN ?= TRUE
+MESHPLAY_K8S_SKIP_COMP_GEN ?= TRUE
 APPLICATIONCONFIGPATH="../install/apps.json"
 
 #-----------------------------------------------------------------------------

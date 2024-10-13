@@ -22,7 +22,7 @@ import (
 
 	"github.com/layer5io/meshery-adapter-library/adapter"
 	"github.com/layer5io/meshery-adapter-library/meshes"
-	"github.com/layer5io/meshery-consul/internal/config"
+	"github.com/synopkg/meshplay-consul/internal/config"
 	"github.com/layer5io/meshkit/errors"
 	mesherykube "github.com/layer5io/meshkit/utils/kubernetes"
 )

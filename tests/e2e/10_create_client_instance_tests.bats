@@ -13,7 +13,7 @@ EOT
 }
 
 @test "client instance should be created" {
-  run bash -c "echo '$CREATE_MESH_REQ_MSG' | grpcurl --plaintext -d @ $MESHERY_ADAPTER_ADDR:10002 meshes.MeshService.CreateMeshInstance | jq ."
+  run bash -c "echo '$CREATE_MESH_REQ_MSG' | grpcurl --plaintext -d @ $MESHPLAY_ADAPTER_ADDR:10002 meshes.MeshService.CreateMeshInstance | jq ."
   [ "$status" -eq 0 ]
   # this operation returns an empty JSON map. an error will not return a JSON object.
   [[ $(echo $output | jq length ) = "0" ]]

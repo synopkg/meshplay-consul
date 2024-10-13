@@ -18,7 +18,7 @@ repeat for all sample applications, and finally delete the mesh.
 * `base64`, used to encode kubeconfig. 
 * BATS, the Bash Automated Testing System: https://github.com/bats-core/bats-core
 * gRPCurl, a command-line tool to interact with gRPC servers: https://github.com/fullstorydev/grpcurl
-* The environment variable `MESHERY_ADAPTER_ADDR` is defined and specifies the IP address or DNS name of the meshery
+* The environment variable `MESHPLAY_ADAPTER_ADDR` is defined and specifies the IP address or DNS name of the meshery
  adapter, e.g. `localhost`. For some configurations, this might be set up in the Makefile.
 * The adapter is running.
 
@@ -29,5 +29,5 @@ As BATS is executing the test files alphabetically, the first two letters in the
 ## Running the tests
 
 * Use `make` with one of the `e2e-` targets.
-* The target `e2e-tests` does not define the environment variable `MESHERY_ADAPTER_ADDR`. Define it before using
+* The target `e2e-tests` does not define the environment variable `MESHPLAY_ADAPTER_ADDR`. Define it before using
  this target.

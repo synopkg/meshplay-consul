@@ -1,4 +1,4 @@
-name: Meshery Adapter for Consul Tests
+name: Meshplay Adapter for Consul Tests
 
 on:
   push:
@@ -52,8 +52,8 @@ jobs:
       expected_resources: consul-connect-injector,consul-server,consul-webhook-cert-manager
       expected_resources_types: pod,pod,pod
       expected_resources_namespaces: consul, consul, consul
-      deployment_url: https://raw.githubusercontent.com/meshery/meshery/master/install/deployment_yamls/k8s/meshery-consul-deployment.yaml
-      service_url: https://raw.githubusercontent.com/meshery/meshery/master/install/deployment_yamls/k8s/meshery-consul-service.yaml
+      deployment_url: https://raw.githubusercontent.com/meshery/meshery/master/install/deployment_yamls/k8s/meshplay-consul-deployment.yaml
+      service_url: https://raw.githubusercontent.com/meshery/meshery/master/install/deployment_yamls/k8s/meshplay-consul-service.yaml
       adapter_name: consul
       patternfile_name: deploy.yaml 
       provider: Local 
@@ -91,8 +91,8 @@ jobs:
         run: |
           pretty=$(jq . data.json)
           rm data.json
-          mkdir -p ./docs/_compatibility/meshery-consul
-          cd ./docs/_compatibility/meshery-consul
+          mkdir -p ./docs/_compatibility/meshplay-consul
+          cd ./docs/_compatibility/meshplay-consul
           touch data.json
           echo $pretty > data.json
           cat data.json
@@ -101,7 +101,7 @@ jobs:
           echo $filename
           echo "---
           timestamp: $(jq '.metadata.runon| strptime("%a %b %e %X %Z %Y") | strftime("%Y-%m-%d %X %Z %a")' data.json)
-          meshery-component: meshery-consul
+          meshery-component: meshplay-consul
           meshery-component-version: $version
           meshery-server-version: $(jq '.metadata."meshery-server-version"' data.json)
           k8s-distro: minikube

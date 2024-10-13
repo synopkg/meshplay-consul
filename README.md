@@ -1,16 +1,16 @@
 <p style="text-align:center;" align="center"><a href="https://layer5.io/meshery"><picture align="center">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo-dark-text-side.svg"  width="70%" align="center" style="margin-bottom:20px;">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo-light-text-side.svg" width="70%" align="center" style="margin-bottom:20px;">
-  <img alt="Meshery logo" src="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo-tag-light-text-side.png" width="70%" align="center" style="margin-bottom:20px;">
+  <img alt="Meshplay logo" src="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo-tag-light-text-side.png" width="70%" align="center" style="margin-bottom:20px;">
 </picture></a><br /><br /></p>
 
-# Meshery Adapter for Consul
+# Meshplay Adapter for Consul
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/layer5/meshery-consul.svg)](https://hub.docker.com/r/layer5/meshery-consul)
-[![Go Report Card](https://goreportcard.com/badge/github.com/layer5io/meshery-consul)](https://goreportcard.com/report/github.com/layer5io/meshery-consul)
-[![Build Status](https://github.com/layer5io/meshery-consul/workflows/Meshery%20Consul/badge.svg)](https://github.com/layer5io/meshery-consul/actions)
-[![GitHub](https://img.shields.io/github/license/layer5io/meshery-consul.svg)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub issues by-label](https://img.shields.io/github/issues/layer5io/meshery-consul/help%20wanted.svg)](https://github.com/layer5io/meshery-consul/issues?q=is%3Aopen+is%3Aissue+label%3A"help+wanted")
+[![Docker Pulls](https://img.shields.io/docker/pulls/khulnasoft/meshplay-consul.svg)](https://hub.docker.com/r/khulnasoft/meshplay-consul)
+[![Go Report Card](https://goreportcard.com/badge/github.com/synopkg/meshplay-consul)](https://goreportcard.com/report/github.com/synopkg/meshplay-consul)
+[![Build Status](https://github.com/synopkg/meshplay-consul/workflows/Meshplay%20Consul/badge.svg)](https://github.com/synopkg/meshplay-consul/actions)
+[![GitHub](https://img.shields.io/github/license/synopkg/meshplay-consul.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GitHub issues by-label](https://img.shields.io/github/issues/synopkg/meshplay-consul/help%20wanted.svg)](https://github.com/synopkg/meshplay-consul/issues?q=is%3Aopen+is%3Aissue+label%3A"help+wanted")
 [![Website](https://img.shields.io/website/https/layer5.io/meshery.svg)](https://layer5.io/meshery/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/mesheryio.svg?label=Follow&style=social)](https://twitter.com/intent/follow?screen_name=mesheryio)
 [![Discuss Users](https://img.shields.io/discourse/users?server=https%3A%2F%2Fdiscuss.layer5.io)](https://discuss.layer5.io)
@@ -18,12 +18,12 @@
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/3564/badge)](https://bestpractices.coreinfrastructure.org/projects/3564)
 
 <p style="clear:both;">
-<h2><a href="https://layer5.io/meshery">Meshery</a></h2>
+<h2><a href="https://layer5.io/meshery">Meshplay</a></h2>
 <a href="https://meshery.io"><img src="/.github/img/readme/meshery-logo-light-text.svg"
 style="margin:10px;" width="125px" 
-alt="Meshery - the Cloud Native Management Plane" align="left" /></a>
-As a self-service engineering platform, <a href="https://meshery.io">Meshery</a> enables collaborative design and operation of cloud native infrastructure. Through it's extension points, Meshery offers the ability to optionally plugin adapters in order to more deeply integrate with specific systems like Consul. 
-<br /><br /><p align="center"><i>If you’re using Meshery or if you like the project, please <a href="https://github.com/layer5io/meshery/stargazers">★</a> star this repository to show your support! 🤩</i></p>
+alt="Meshplay - the Cloud Native Management Plane" align="left" /></a>
+As a self-service engineering platform, <a href="https://meshery.io">Meshplay</a> enables collaborative design and operation of cloud native infrastructure. Through it's extension points, Meshplay offers the ability to optionally plugin adapters in order to more deeply integrate with specific systems like Consul. 
+<br /><br /><p align="center"><i>If you’re using Meshplay or if you like the project, please <a href="https://github.com/layer5io/meshery/stargazers">★</a> star this repository to show your support! 🤩</i></p>
 </p>
 
 <p style="clear:both;">

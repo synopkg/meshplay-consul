@@ -17,7 +17,7 @@ setup() {
 }
 EOT
 )
-  run bash -c "echo '$INSTALL_BOOKINFO' | grpcurl --plaintext -d @ $MESHERY_ADAPTER_ADDR:10002 meshes.MeshService.ApplyOperation"
+  run bash -c "echo '$INSTALL_BOOKINFO' | grpcurl --plaintext -d @ $MESHPLAY_ADAPTER_ADDR:10002 meshes.MeshService.ApplyOperation"
   [ "$status" -eq 0 ]
 }
 
@@ -63,7 +63,7 @@ EOT
 }
 EOT
 )
-  run bash -c "echo '$DELETE_BOOKINFO' | grpcurl --plaintext -d @ $MESHERY_ADAPTER_ADDR:10002 meshes.MeshService.ApplyOperation"
+  run bash -c "echo '$DELETE_BOOKINFO' | grpcurl --plaintext -d @ $MESHPLAY_ADAPTER_ADDR:10002 meshes.MeshService.ApplyOperation"
   [ "$status" -eq 0 ]
 }
 
