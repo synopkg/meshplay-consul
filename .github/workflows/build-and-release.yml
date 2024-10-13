@@ -19,7 +19,7 @@ jobs:
         uses: azure/docker-login@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Docker edge build & tag
         if: startsWith(github.ref, 'refs/tags/') != true && success()
         run: |
@@ -51,5 +51,5 @@ jobs:
         uses: peter-evans/dockerhub-description@v2.0.0
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKERHUB_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKERHUB_PASSWORD: ${{ secrets.DOCKER_TOKEN }}
           DOCKERHUB_REPOSITORY: ${{ secrets.IMAGE_NAME }}
